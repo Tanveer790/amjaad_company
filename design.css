@@ -84,33 +84,43 @@ nav ul li a:hover {
 }
 
 /* Services Section Styling */
-#services {
-    background-color: #fff;
-    padding: 40px 0;
-}
-
+/* Service Cards Styling */
 .service-list {
     display: flex;
-    justify-content: space-around;
-    gap: 20px;
+    justify-content: center;
+    gap: 100px;
 }
 
-.service {
+.service-card {
     background-color: #ecf0f1;
-    padding: 20px;
     text-align: center;
+    padding: 20px;
     border-radius: 8px;
-    flex: 1;
+    text-decoration: none;
+    color: #2c3e50;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 400px; /* Adjust the size of the card */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.service h3 {
+.service-card h2 {
     font-size: 1.8em;
     margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
 }
 
-.service p {
-    font-size: 1.1em;
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    background-color: #bdc3c7;
+    cursor: pointer;
 }
+
+.service-card:active {
+    transform: translateY(2px);
+}
+
 
 /* Team Section Styling */
 #team {
@@ -210,4 +220,7 @@ footer p {
     .team-members {
         flex-direction: column;
     }
+}
+.section-title {
+    color: white;
 }
